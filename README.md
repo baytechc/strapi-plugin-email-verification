@@ -1,3 +1,3 @@
 # Strapi plugin email-verification
 
-A quick description of email-verification.
+A plugin to provide email verification services for Waasabi and other Strapi backends using flexible, localizable, markdown-enabled email templates.
