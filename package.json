@@ -1,0 +1,31 @@
+{
+  "name": "strapi-plugin-email-verification",
+  "version": "0.1.0",
+  "description": "A plugin to provide email verification services for Waasabi and other Strapi backends using flexible, localizable, markdown-enabled email templates.",
+  "strapi": {
+    "name": "email-verification",
+    "icon": "plug",
+    "description": "A plugin to provide email verification services for Waasabi and other Strapi backends using flexible, localizable, markdown-enabled email templates."
+  },
+  "dependencies": {
+    "@fluent/bundle": "^0.16.1",
+    "accept-language-parser": "^1.5.0"
+  },
+  "author": {
+    "name": "Flaki",
+    "email": "git@flaki.hu",
+    "url": "https://flak.is"
+  },
+  "maintainers": [
+    {
+      "name": "Flaki",
+      "email": "git@flaki.hu",
+      "url": "https://flak.is"
+    }
+  ],
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

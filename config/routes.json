@@ -1,0 +1,21 @@
+{
+  "routes": [
+
+    {
+      "method": "POST",
+      "path": "/request",
+      "handler": "verification.request",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/verify",
+      "handler": "verification.verify",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

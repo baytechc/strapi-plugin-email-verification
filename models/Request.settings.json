@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "email-verification_requests",
+  "info": {
+    "name": "Verification requests"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "code": {
+      "type": "string"
+    },
+    "expiry": {
+      "type": "datetime"
+    }
+  }
+}
