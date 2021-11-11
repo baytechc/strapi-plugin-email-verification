@@ -20,6 +20,7 @@ module.exports = {
    */
   async request(ctx) {
     const { email, reason } = ctx.request.body;
+    console.log(ctx.request.body)
 
     try {
       const code = await strapi.plugins['email-verification'].services.verification.request(
@@ -29,10 +30,10 @@ module.exports = {
       console.log(`[verify-email] Code sent (${code}): ${email}`);
 
     } catch(e) {
-      console.log(`[verify-email] Error: ${e.message}`);
+      console.log(`[verify-email] Error: ${e.toString()}`);
       console.error(new Date().toISOString(), e);
 
-      return ctx.throw(500);
+      return ctx.badRequest(e.toString());
     }
 
     ctx.send(200);

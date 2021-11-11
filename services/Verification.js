@@ -51,7 +51,7 @@ module.exports = {
    */
   async request(email, reason, language = FALLBACK_LOCALE) {
     if (typeof email != 'string' || email.includes('@') == false ) {
-      throw('Invalid email address.');
+      throw(new Error('Invalid email address.'));
     }
 
     // Delete previous requests, if there were any lingering
